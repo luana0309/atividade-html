@@ -1,0 +1,173 @@
+*{ /*seletor universal é colocado no início sempre*/
+    margin: 0; 
+    padding: 0;
+    font-family: 'Inter', 'Sans-serif'; /*fonte do site estilizado*/
+}
+.cabecalho{
+    background-color: #7c71ff; /*altera a cor do fundo da pagina*/
+    display: flex; /*envolve toda nossa classe como container*/
+    align-items: center; /*ajusta a posição horizontal de imagens e botões*/
+    justify-content: space-between; /*ajusta a posição vertical de imagens e botões*/
+    height: 100px; /*altura do cabecalho colorido roxo*/
+}
+li{
+    display: inline-block; /* inline-block tem comportamento de deixar um do lado do outro, mas também mexer na altura e largura*/
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 40px; /*arredonda a borda*/
+    margin-right: 10px; /*separa a margem dos icones um do outro no menu*/
+}
+a{
+    text-decoration: none; /*decora o texto com underline e escrever text-decoration:none tira esse underline*/
+}
+.info-usuario{
+    color: #ffffff; /*cor da letra*/
+    margin-left: 30px;
+    text-transform: uppercase; /*colocar em capslock a letra*/
+}
+.nome{
+    text-transform: uppercase;
+}
+.descricao{
+    background-color: #ffffff;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #200065;
+}
+.texto-a {
+    margin-top: 10px;
+    font-family: 'Abril Fatface';
+    font-size: 40px;
+}
+.texto-b {
+    margin-bottom: 30px;
+    font-family: 'inter';
+    font-size: 40px;
+}
+img {
+    align-items: center;
+    justify-content: center;
+}
+.meu-link {
+    align-items: baseline;  
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.clientes{
+    background-color: #AEBFEB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+#content {
+    display: flex;
+    width: 1150px;
+    height: 200px;
+    }
+#content div {
+    flex-basis: 250px;
+    }
+    
+.box{
+    display: inline-block;
+    background-color: #D4E0FF;
+    display: inline-block;
+    padding: 50px;
+    margin-right: 50px;
+    flex-shrink: 0;
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    font-family: 'Abril Fatface';
+    font-size: 32px;
+    color: #200065;
+   
+}
+h4{
+    font-family: 'Abril Fatface';
+    font-size: 25px;
+}
+h5{
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 10px;
+    margin-bottom: 75px;
+}
+.Pedidos{
+    background-color: #D7E2FF;
+    text-align: center;
+    align-items: center;
+    display: center;
+    justify-content: center;
+    height: 300px;
+}
+.comprinhas{
+    font-family: 'Abril Fatface';
+    font-size: 32px;
+    color: #200065;
+    margin-bottom: 75px;
+}
+thead{
+    background-color: #7C71FF;
+    color: #1E1E1E;
+    width: 250px;
+    height: 50px
+}
+table {
+    width: 1250px;
+    margin-bottom: 200px;
+    height: 100px;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid;
+  }
+.faleConosco{
+    background-color: #AEBFEB;
+    text-align: center;
+    align-items: center;
+    display: center;
+    justify-content: center;
+    height: 300px;
+}
+.fale-aqui {
+    font-family: 'Abril Fatface';
+    font-size: 32px;
+    color: #200065;
+}
+label {
+    font-family: 'inter';
+    font-size: large;
+    margin-bottom: 75px;
+}
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+textarea[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+footer {
+    width: 2000px;
+    height: 75px;
+    background-color: #3F3F3F;
+    color:#ffffff;
+    font-family: 'inter';
+    display: flex; /*envolve toda nossa classe como container*/
+    align-items: center; /*ajusta a posição horizontal de imagens e botões*/
+    justify-content: space-between; /*ajusta a posição vertical de imagens e botões*/
+}

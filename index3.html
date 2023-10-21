@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR"
+<html lang="pt-BR">
     <head>
+        <title>loja virtual</title>
        <meta charset="UTF-8">
-       <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style.css"> <para linkar com o css/>
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-       <title>loja virtual</title> 
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div>
-                <p><strong>Luana Marques</strong></p>
-                <small>Último login em: 10/10/2023 às 20:03</small>
+        <header class="cabecalho">
+            <div class="info-usuario">
+                <p>
+                    <strong class="nome">Luana Marques</strong></br>
+                    <small>Último login em: 10/10/2023 às 20:03</small>
+                </p>
             </div>
-            <nav>
-                <ul>
+            <nav id="meu-id" class="navegacao-menu">
+                <ul class="lista-menu">
                     <li>
                         <a href="#">
                             <i class="fa fa-home"></i>
@@ -45,9 +52,9 @@
             </nav>
         </header>
         <main>
-            <section id="descricao"> 
-                <h1>Nova Coleção</h1>
-                <h2>Ganhe 10% off na compra</h2>
+            <section class="descricao"> 
+                <h1 class="texto-a">Nova Coleção</h1></br>
+                <p class="texto-b">Ganhe <b>10%</b> off na compra</p>
                 <ol>
                     <li>
                         <figure>
@@ -73,31 +80,35 @@
                         </figure>
                     </li>
 
-                    <p><a href="https://www.cea.com.br/" target="_blank">Clique aqui para conferir</a></p>
-
                 </ol>
+                <p class="meu-link"><a href="https://www.cea.com.br/" target="_blank">Clique aqui para conferir</a></p>
             </section>
 
-            <section id="clientes">
-                <h3>
+            <section class="clientes">
+                <h3 class="titulo">
                     Nossos clientes
                 </h3>
-                <article></article>
-                    <h4>Maria Pereira</h4>
-                    <h5>Avaliado em: 10/10/2023</h5>
-                    <p>Lindo! Amei.</p><br/>
-
-                    <h4>Laízz Victoria</h4>
-                    <h5>Avaliado em: 09/10/2023</h5>
-                    <p>Estou apaixonada pela minha compra.</p><br/>
-
-                    <h4>Vanusa Cristina</h4>
-                    <h5>Avaliado em: 08/10/2023</h5>
-                    <p>Ótima qualidade. Igual da foto.</p><br/>
-            </article>
+                <div id="content">
+                    <div class="box">
+                        <h4>Maria Pereira</h4>
+                        <h5><i>Avaliado em: 10/10/2023</i></h5>
+                        <p>Lindo! Amei.</p>
+                    </div>
+                    <div class="box">
+                        <h4>Laízz Victoria</h4>
+                        <h5><i>Avaliado em: 09/10/2023</i></h5>
+                        <p>Estou apaixonada pela minha compra.</p>
+                    </div>
+                    <div class="box">
+                        <h4>Vanusa Cristina</h4>
+                        <h5><i>Avaliado em: 08/10/2023</i></h5>
+                        <p>Ótima qualidade. Igual da foto.</p>
+                    </div>
+                </div>
             </section>
 
-            <section>
+            <section class="Pedidos">
+                <h3 class="comprinhas">Meus Pedidos</h3>
                 <table>
                     <thead>
                         <tr>
@@ -137,7 +148,8 @@
                 </table>
             </section>
         
-            <section id="faleConosco">
+            <section class="faleConosco">
+                <h3 class="fale-aqui">Fale conosco</h3>
                 <form>
                     <label>Nome:</label>
                     <input type="text" id="nome"/>
